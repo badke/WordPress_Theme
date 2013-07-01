@@ -1,0 +1,256 @@
+/*
+Theme Name: Classic
+Theme URI: http://wordpress.org/
+Description: The original WordPress theme that graced versions 1.2.x and prior.
+Version: 1.6
+Author: Dave Shea
+*/
+
+/* RESET */
+*, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, ul li, ol li, blockquote, form, input, textarea, select, option, fieldset, legend, object, param, hr, table, tr, td { margin: 0; padding: 0; }
+ul, ol { list-style-type: none; }
+img { border-style: none; border-width: 0; }
+input:focus, textarea:focus { outline: none; }
+img#wpstats { position: absolute; left: -9999px; }
+
+/* BODY */
+body {
+	font: normal 16px/22px Arial, Helvetica, sans-serif;
+	color: #000;
+	background: #fff url(images/overall-background.png) no-repeat center 168px;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+a { color: #1267a7; }
+a:hover { color: #f4911e; }
+.wrapper { width: 960px; margin:0 auto; }
+h1, h2, h3, h4, h5, h6, { font-family: 'Comfortaa', Arial, Helvetica, sans-serif; font-weight: 700; -webkit-backface-visibility: hidden; -webkit-text-stroke: 1px transparent; }
+input, textarea { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border: solid 1px #1267a7; -moz-box-shadow: inset 0 0 13px #c0c0c0; -webkit-box-shadow: inset 0 0 13px #c0c0c0; box-shadow: inset 0 0 13px #c0c0c0; padding: 5px; font: normal 14px/20px Arial, Helvetica, sans-serif; color: #1267a7; float: left; }
+label { float: left; width: 160px; }
+input:focus, textarea:focus { border: solid 1px #f4911e; }
+.submit input { display: inline-table; font: 400 18px/20px 'Comfortaa', Arial, Helvetica, sans-serif; color: #fff; height: 30px; line-height: 30px; padding: 0 25px 0 15px; background: #1267a7 url(images/arrow-white.png) no-repeat right center; border: none 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; -moz-border-radius: 20px; border-radius: 20px; }
+.submit input:hover { background-color: #f4911e; cursor: pointer; }
+
+
+/* HEADER */
+#header {
+	position: relative;
+	height: 65px;
+}
+#header .wrapper {
+	position: relative;
+}
+#header h3 {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 26px;
+}
+#header p {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	text-align: right;
+}
+#header img {
+	position: absolute;
+	top: 10px;
+	left: 268px;
+}
+
+
+/* CONTENT */
+#content {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+#page {
+	float: left;
+	width: 600px;
+	margin: 0 60px 0 0;
+}
+#content h1 {
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 26px;
+	margin: 0 0 10px 0;
+}
+#content h2 {
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 26px;
+	margin: 0 0 10px 0;
+}
+#content h3 {
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 26px;
+	margin: 0 0 10px 0;
+}
+	#content h3.border {
+		border-bottom: solid 1px #ddd;
+		padding: 0 0 10px 0;
+	}
+#content h4 {
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 26px;
+	margin: 0 0 10px 0;
+}
+#content h5 {
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 26px;
+	margin: 0 0 10px 0;
+}
+#content h6 {
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 26px;
+}
+#content p {
+	margin: 0 0 20px 0;
+}
+	#content p#breadcrumb {
+		font-size: 14px;
+		margin: 0 0 10px 0;
+		color: #666;
+	}
+		#content p#breadcrumb a {
+			color: #666;
+		}
+		#content p#breadcrumb a:hover {
+			color: #333;
+		}
+	#content p.read-more {
+		text-align: right;
+	}
+		#content p.read-more a {
+			display: inline-block;
+			background: url(images/arrow-nav.png) no-repeat right -110px;
+			padding: 0 14px 0 0;
+			font: 700 14px/20px 'Comfortaa', Arial, Helvetica, sans-serif;
+			color: #f4911e;
+		}
+		#content p.read-more a:hover {
+			background-position: right 5px;
+			color: #1267a7;
+		}
+	#content p.meta { 
+		font-size: 12px;
+		line-height: 24px;
+		color: #ddd;
+		margin: 0 0 10px 0;
+	}
+		#content p.meta a { 
+			color: #ddd;
+		}
+#content ul {
+	margin: 0 40px 20px 40px;
+	list-style-type: disc;
+}
+#content ol {
+	margin: 0 40px 20px 40px;
+	list-style-type: decimal;
+}
+#content li {
+	margin: 0 0 10px 0;
+}
+#content blockquote {
+	margin: 0 40px 20px 40px;
+}
+#content .post {
+	border-bottom: solid 1px #ddd;
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
+}
+#content .share-buttons { 
+	width: 60px;
+	float: right;
+	margin: 0 0 20px 20px;
+}
+	#content .share-buttons .share-item { 
+		text-align: center;
+		margin: 0 0 10px 0;
+	}
+.navigation {
+	overflow: hidden;
+}
+.navigation .alignright, .navigation .alignleft { 
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.navigation .alignright { 
+	text-align: right;
+}
+.navigation a { 
+	background: url(images/arrow-pager.png) no-repeat right 4px;
+	display: inline-block;
+	padding: 0 20px 0 0;
+	font: 700 14px/20px 'Comfortaa', Arial, Helvetica, sans-serif;
+	color: #f4911e;
+	text-decoration: none;
+}
+.navigation .alignleft a { 
+	background-position: 0 -29px;
+	padding: 0 0 0 20px;
+}
+
+
+/* SIDEBAR */
+#sidebar {
+	float: left;
+	width: 300px;
+}
+#sidebar .box {
+}
+
+
+/* FOOTER */
+#footer {
+	position: relative;
+}
+#footer .wrapper {
+	position: relative;
+}
+#footer p {
+	position: absolute;
+	top: 10px;
+	right: 100px;
+	text-align: right;
+}
+#footer p.social {
+	right: 0;
+}
+#footer p.copyright {
+	left: 0;
+	text-align: left;
+}
+
+
+/* MISC. CLASSES */
+.alignright {
+	float: right;
+}
+img.alignright {
+	margin: 0 10px 30px 30px;
+	padding: 1px;
+	border: solid 1px #ddd;
+}
+.alignleft {
+	float: left;
+}
+img.alignleft {
+	margin: 0 10px 30px 30px;
+	padding: 1px;
+	border: solid 1px #ddd;
+}
+.aligncenter, p.center {
+	text-align: center;
+}
